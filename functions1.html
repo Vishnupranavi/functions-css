@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>
+            Examples
+        </title>
+    </head>
+    <style>
+        div {
+           width: 300px;
+           border: 15px solid green;
+           padding: 50px;
+           margin: 20px;
+         }
+    </style>
+    
+        <script>
+            // function call(value){
+            //     console.log("Hello "+value);
+            //     document.write("Hello "+value);
+            // }
+            // let value=prompt("enter a valid");
+            // call(value);
+            // // with return
+            // function add(a,b){
+            //    return a*b;
+            // } 
+            // document.write("<br>");
+            // let n1=prompt("enter n1");
+            // let n2=prompt("enter n2");
+            // let result=add(n1,n2);
+            // document.write(result);
+            // //function expressions
+            // var b=function(a,b){
+            //     return a+b;
+            // }
+            // let re=b(6,7);
+            // var g=re*4;
+            // console.log(g);
+            // //console.log(re);
+
+            //function object creation
+            var add=new Function("num1","num2","return num1+num2");
+            document.writeln(add(10,6));
+
+            // 
+            function getcube(number){  
+            alert(number*number*number);  
+            }
+
+        </script>
+        <body>
+          
+            <form>  
+                <input type="button" value="click" onclick="getcube(4)"/>  
+                </form>  
+                
+        </body>
+  
+</html>
